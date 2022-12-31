@@ -8,54 +8,7 @@
     <link rel="stylesheet" href="asset/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Generate Random Password</h1>
-      <div class="content">
-        <textarea name="" id="result" cols="25" rows="1"></textarea>
-        <div class="bottom-copy">
-          <svg width="32" height="32" viewBox="0 0 24 24">
-            <path
-              fill="#000000"
-              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
-          </svg>
-        </div>
-        <div class="bottom-generate">
-          <svg width="32" height="32" viewBox="0 0 16 16">
-            <path
-              fill="none"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              d="M4.75 10.75h-3m12.5-2c0 3-2.798 5.5-6.25 5.5c-3.75 0-6.25-3.5-6.25-3.5v3.5m9.5-9h3m-12.5 2c0-3 2.798-5.5 6.25-5.5c3.75 0 6.25 3.5 6.25 3.5v-3.5" />
-          </svg>
-        </div>
-      </div>
-      <div class="setting">
-        <input
-          class="inp-number"
-          type="number"
-          id="generate-length"
-          placeholder="8" />
-        <label class="label ml" for="generate-length"> Length </label>
-        <input class="inp-character" type="checkbox" id="generate-character" />
-        <label class="label ml" for="generate-character">Character</label>
-        <input
-          class="inp-generate-number"
-          type="checkbox"
-          id="generate-number" />
-        <label class="label ml" for="generate-number">Number</label>
-      </div>
-      <div class="choose-text">
-        <select list="text-size" id="type-text" class="choose-type-file">
-          <option selected="selected">Auto</option>
-          <option>CapsLock</option>
-          <option>Smalll</option>
-        </select>
-        <label for="type-text" class="label mll">Choose Type Text</label>
-      </div>
-    </div>
-
+    <div id="root"></div>
     <script src="asset/script.js"></script>
   </body>
 </html>
