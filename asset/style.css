@@ -49,11 +49,17 @@ h1{
     margin-left: 0.5em;
     transition: 1s;
 }
-.generate-animation {
-        transition: 1s;
-}
 .generate-addAnimation {
-     transform: rotate(360deg);
+    animation: rotation 0.8s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 .bottom-generate:hover {
     background-color: #772ce8;
@@ -164,6 +170,24 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   
+}
+.text-copied {
+    width: 230px;
+    height: 50px;
+    border-radius: 15px;
+    background-image:linear-gradient(to left, #553c9a, #b393d3); ;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+}
+.text-copy{
+    display: flex;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
 }
 @media only screen and (min-width: 600px) {
     body {
